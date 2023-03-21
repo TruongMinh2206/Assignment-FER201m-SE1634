@@ -1,0 +1,10 @@
+[
+{"movieId":1, "name": "Vua Hải Tặc", "year": "2022", "category": "Hoạt hình", "IMG": "logo1.jpg","des":"nó là phim hay"},
+{"movieId":2, "name": "Vua Hải Tặc2", "year": "2022", "category": "Hoạt hình", "IMG": "logo2.jpg","des":"nó là phim hay"},
+{"movieId":3, "name": "Vua Hải Tặc3", "year": "2022", "category": "Hoạt hình", "IMG": "logo3.jpg","des":"nó là phim hay"},
+{"movieId":4, "name": "Vua Hải Tặc4", "year": "2022", "category": "Hoạt hình", "IMG": "logo4.jpg","des":"nó là phim hay"},
+{"movieId":5, "name": "Vua Hải Tặc5", "year": "2022", "category": "Hoạt hình", "IMG": "logo5.jpg","des":"nó là phim hay"},
+{"movieId":6, "name": "Vua Hải Tặc6", "year": "2022", "category": "Hoạt hình", "IMG": "logo6.jpg","des":"nó là phim hay"},
+{"movieId":7, "name": "Vua Hải Tặc7", "year": "2022", "category": "Hoạt hình", "IMG": "logo7.jpg","des":"nó là phim hay"},
+{"movieId":8, "name": "Vua Hải Tặc8", "year": "2022", "category": "Hoạt hình", "IMG": "logo8.jpg","des":"nó là phim hay"}
+]
