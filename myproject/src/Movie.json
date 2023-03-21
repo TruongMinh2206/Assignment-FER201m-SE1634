@@ -1,10 +1,13 @@
 [
-{"movieId":1, "name": "Vua Hải Tặc", "year": "2022", "category": "Hoạt hình", "IMG": "logo1.jpg","des":"nó là phim hay"},
-{"movieId":2, "name": "Vua Hải Tặc2", "year": "2022", "category": "Hoạt hình", "IMG": "logo2.jpg","des":"nó là phim hay"},
-{"movieId":3, "name": "Vua Hải Tặc3", "year": "2022", "category": "Hoạt hình", "IMG": "logo3.jpg","des":"nó là phim hay"},
-{"movieId":4, "name": "Vua Hải Tặc4", "year": "2022", "category": "Hoạt hình", "IMG": "logo4.jpg","des":"nó là phim hay"},
-{"movieId":5, "name": "Vua Hải Tặc5", "year": "2022", "category": "Hoạt hình", "IMG": "logo5.jpg","des":"nó là phim hay"},
-{"movieId":6, "name": "Vua Hải Tặc6", "year": "2022", "category": "Hoạt hình", "IMG": "logo6.jpg","des":"nó là phim hay"},
-{"movieId":7, "name": "Vua Hải Tặc7", "year": "2022", "category": "Hoạt hình", "IMG": "logo7.jpg","des":"nó là phim hay"},
-{"movieId":8, "name": "Vua Hải Tặc8", "year": "2022", "category": "Hoạt hình", "IMG": "logo8.jpg","des":"nó là phim hay"}
+{"movieId":1, "name": "Vua Hải Tặc", "year": "2022", "category": "Hoạt hình", "IMG": "logo1.jpg","des":"nó là phim hay", "score": 8},
+{"movieId":2, "name": "Mặt Nạ Gương", "year": "2019", "category": "Kinh Dị", "IMG": "logo2.jpg","des":"nó là phim hay", "score": 8},
+{"movieId":3, "name": "Về Nhà Đi Con", "year": "2020", "category": "Tình cảm", "IMG": "logo3.jpg","des":"nó là phim hay", "score": 8},
+{"movieId":4, "name": "Nỗi Ám Ảnh", "year": "2016", "category": "Kinh Dị", "IMG": "logo4.jpg","des":"nó là phim hay", "score": 8},
+{"movieId":5, "name": "Hậu Duệ Mặt Trời", "year": "2018", "category": "Tình cảm", "IMG": "logo5.jpg","des":"nó là phim hay", "score": 8},
+{"movieId":6, "name": "NaruTo", "year": "2020", "category": "Hoạt hình", "IMG": "logo6.jpg","des":"nó là phim hay", "score": 8},
+{"movieId":7, "name": "Ma Búp Bê", "year": "2013", "category": "Kinh Dị", "IMG": "logo7.jpg","des":"nó là phim hay", "score": 8},
+{"movieId":8, "name": "Nhà Tù Shawshank", "year": "1994", "category": "Hình sự, Trinh thám", "IMG": "logo8.jpg","des":"nó là phim hay", "score": 8},
+{"movieId":9, "name": "Bố Già", "year": "1972", "category": "Hình sự, Trinh thám", "IMG": "logo8.jpg","des":"nó là phim hay", "score": 8},
+{"movieId":10, "name": "Kỵ Sĩ Bóng Đêm", "year": "2008", "category": "Giả Tưởng", "IMG": "logo8.jpg","des":"nó là phim hay", "score": 8},
+{"movieId":11, "name": "Avatar 2", "year": "2022", "category": "Giả Tưởng", "IMG": "logo8.jpg","des":"nó là phim hay", "score": 8}
 ]
