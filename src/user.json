@@ -1,0 +1,8 @@
+
+
+[
+    {"id":1, "name": "Phạm Trọng Nguyên", "password": "123456", "gender": "Male", "email": "nguyenpt2k3@gmail.com", "comment": "haystack"},
+    {"id":2, "name": "Trần Thu Hường", "password": "123456", "gender": "Female", "email": "huongtt2k4@gmail.com", "comment": "haystack"},
+    {"id":3, "name": "Nguyễn Đức Bình", "password": "123456", "gender": "Male", "email": "binhnd2k2@gmail.com", "comment": "haystack"},
+    {"id":4, "name": "Trần Trọng Đức", "password": "123456", "gender": "Male", "email": "ductt2k2@gmail.com", "comment": "haystack"}
+]
