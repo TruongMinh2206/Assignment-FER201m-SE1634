@@ -4,7 +4,7 @@ import { UserContent } from "./App";
 import User from "./user.json";
 import Movie from "./Movie.json";
 import MovieCard from "./MovieCard";
-
+import 'bootstrap/dist/css/bootstrap.css';
 import "./style.css";
 
 
@@ -15,7 +15,7 @@ const Home = () => {
 	const [movieAppear, setMovieAppear] = useState(Movie);
 
 	// Lấy tham chiếu đến ô nhập liệu search
-	const refSearch = useRef();
+	
 	const [selectedCategory, setSelectedCategory] = useState("");
 
 
@@ -44,7 +44,7 @@ const Home = () => {
 
 	const handleSearch = (event) => {
 		event.preventDefault();
-		const searchVal = refSearch.current.value
+		const searchVal = document.getElementById('search').value
 		const searchResult = movieAppear.filter(movie => movie.name.toLowerCase().startsWith(searchVal.toLowerCase()))
 		setMovieAppear(searchResult)
 	}
@@ -53,41 +53,50 @@ const Home = () => {
 		// không cần cập nhật lại danh sách phim hiển thị
 		if (category === "all") {
 			setMovieAppear(Movie);
-		  }else{
-		if (category === selectedCategory) {
-			return;
-		}
+		} else {
+			if (category === selectedCategory) {
+				return;
+			}
 
-		// Lọc danh sách phim theo thể loại được chọn
-		const filteredMovies = Movie.filter((movie) => movie.category === category);
-		setMovieAppear(filteredMovies);
-		setSelectedCategory(category);
-	}};
+			// Lọc danh sách phim theo thể loại được chọn
+			const filteredMovies = Movie.filter((movie) => movie.category === category);
+			setMovieAppear(filteredMovies);
+			setSelectedCategory(category);
+		}
+	};
 
 
 	return (
 
 		<div className="home">
-			<div className="home_wrap">
-				<div className="home_header">
-					<div>
-						<h4>PHIM HAY</h4>
 
-					</div>
-					<div>
-						<h5>Trang chủ</h5>
 
-					</div>
-					<form className="home_form" >
-						<input ref={refSearch} placeholder='Enter Name to search' />
-						<button onClick={handleSearch}>Search</button>
-						<button onClick={handleSearch}>Đăng nhập</button>
-						<button onClick={handleSearch}>Đăng kí</button>
+			<nav className="navbar navbar-expand-lg navbar-light bg-light">
+				PHIM HAY
+				<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span className="navbar-toggler-icon"></span>
+				</button>
+
+				<div className="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul className="navbar-nav mr-auto">
+						<li className="nav-item">
+							<Link to="/" className='trangchu'>Trang chủ</Link>
+						</li>
+					</ul>
+					<form className="form-inline my-2 my-lg-0" onSubmit={handleSearch}>
+<input className="form-control mr-sm-2" type="search" placeholder="Nhập tên phim cần tìm" aria-label="Search" id="search"/>
+						<button className="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm</button>
 					</form>
 				</div>
-				<div className="albums_category">
-					<h4>Thể Loại</h4>
-					<button onClick={() => handleFilter("all")}>Tất cả</button>
+				<t><Link to="/Login">Đăng nhập</Link></t>
+				<Link to="/Register">Đăng ký</Link>
+			</nav>
+
+			<div className='body_home row'>
+				<div className="col-3">
+					<h3>Thể Loại</h3>
+					<ul>
+					<li onClick={() => handleFilter("all")}>Tất cả</li>
 					{Movie.reduce(
 						(categories, movie) =>
 							categories.includes(movie.category)
@@ -95,29 +104,36 @@ const Home = () => {
 								: [...categories, movie.category],
 						[]
 					).map((category) => (
-						<button key={category} onClick={() => handleFilter(category)}>
+						<li key={category} onClick={() => handleFilter(category)}>
 							{category}
-						</button>
+						</li>
 					))}
+					</ul>
 				</div>
-				<div className="albums_items">
-					<div className="albums_items_wrap">
+				<div className=" col-9">
+					<div className="row">
 
 						{movieAppear.map(movie => (
-							<div className="albums_items_wrap1" key={movie.name}>
-								<img className="albums_img" src={movie.IMG}></img>
-								<h3>Tên: {movie.name}</h3>
-								<h3>Năm: {movie.year}</h3>
-								<h3>Loại: {movie.category}</h3>
-								<h3>Điểm: {movie.score}</h3>
-								<button>Đánh giá</button>
+							<div className="col-3">
+								<div className="card" key={movie.name}>
+									<img className="card-img-top" src={movie.IMG}></img>
+									<div class="card-body">
+										<h5 class="card-title">{movie.name}</h5>
+										<p>Năm: {movie.year}</p>
+										<p>Loại: {movie.category}</p>
+										<p>Điểm: {movie.score}</p>
+										<Link to ="/Detail" class="btn btn-primary">Đánh giá</Link>
+									</div>
+								</div>
 							</div>
-
 						))}
 					</div>
 				</div>
+
+
 			</div>
 		</div>
+
 	);
 };
 

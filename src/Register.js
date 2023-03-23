@@ -1,8 +1,8 @@
-import '../App.css';
-import user from '../user.json'
+import './App.css';
+import user from './user.json'
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import React, { useState } from 'react'
-import '../style.css'
+import './style.css'
 import 'bootstrap/dist/css/bootstrap.css';
 
 // import * as fs from 'fs';
